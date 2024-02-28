@@ -1,4 +1,3 @@
-%%writefile main.py
 import uvicorn
 import torch
 from torch.nn.functional import softmax
