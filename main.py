@@ -14,7 +14,7 @@ from fastapi.responses import JSONResponse
 from transformers import DistilBertTokenizerFast
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
 
-model_path = "./model"
+model_path = "./model_artifact"
 tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 model = DistilBertForSequenceClassification.from_pretrained("./model_artifact")
 
