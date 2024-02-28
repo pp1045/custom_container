@@ -14,7 +14,7 @@ from transformers import DistilBertTokenizerFast
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
 
 model_path = "./model_artifact"
-tokenizer = DistilBertTokenizer.from_pretrained(model_path)
+tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 model = DistilBertForSequenceClassification.from_pretrained("./model_artifact")
 
 app = FastAPI(title="Sentiment Analysis")
